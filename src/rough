@@ -1,0 +1,10 @@
+Siddiq Abbasi [12:49 PM] 
+<div>
+               {selectedDay && <p>Day: {selectedDay.toLocaleDateString()}</p>}
+               {!selectedDay && <p>Choose a day</p>}
+               <DayPickerInput
+                   dayPickerProps={{
+                   numberOfMonths: 2
+                   }}
+                   onDayChange={this.handleDayChange} />
+           </div>
